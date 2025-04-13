@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -22,7 +24,7 @@ const Login = () => {
       localStorage.setItem("token-LoFi", token);
       toast.success("Login successful! 🎉");
 
-      window.location.href = "/";
+      navigate("/");
     } catch (err) {
       console.error(err);
       toast.error("Login failed. Please check your credentials. ❌");
