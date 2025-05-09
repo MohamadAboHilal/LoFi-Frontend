@@ -1,12 +1,63 @@
-# React + Vite
+# LoFi-Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern frontend application for streaming LoFi music, built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Ensures optimal viewing experience across various devices.
+- **Fast Development Setup**: Utilizes Vite for rapid development and hot module replacement.
+- **Styled with Tailwind CSS and some DaisyUI componenets**: Offers a utility-first approach to styling for quick UI development.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/MohamadAboHilal/LoFi-Frontend.git
+   cd LoFi-Frontend
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   The application will be available at `http://localhost:5173`.
+
+## Project Structure
+
+```
+LoFi-Frontend/
+├── public/             # Static assets
+├── src/                # Source files
+│   ├── components/     # Reusable components
+│   ├── assets/         # Images and other assets
+│   ├── App.jsx         # Root component
+│   └── main.jsx        # Entry point
+├── index.html          # HTML template
+├── tailwind.config.js  # Tailwind CSS configuration
+├── vite.config.js      # Vite configuration
+└── package.json        # Project metadata and scripts
+```
+
+## Deployment
+
+The application can be deployed using platforms like [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/). Ensure that the build command is set to `npm run build` and the output directory is `dist`.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
